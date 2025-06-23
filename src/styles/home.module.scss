@@ -87,6 +87,10 @@
 		background-color: rgba(164, 161, 161, 0.05);
 		@include flex;
 
+		@include macbookpro{
+			padding: 45px $margin-1;
+		}
+
 		@include macbook {
 			padding: 45px $margin-2;
 		}

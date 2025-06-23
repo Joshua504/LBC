@@ -10,7 +10,7 @@
   background-size: cover;
 
   .banner2Content{
-    padding: 94px $margin-0;
+    padding: 94px $margin-0fix;
     background: #1E1E1E;
 
     @include mobile{
@@ -63,7 +63,7 @@
         gap: 24px;
 
         input, select{
-          width: 362px;
+          width: 360px;
           height: 100px;
           border-radius: 10px;
           border: none;
