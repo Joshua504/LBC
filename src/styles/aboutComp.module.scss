@@ -1,0 +1,102 @@
+@use '/src/styles/variable' as *;
+@use '/src/styles/mixin' as *;
+
+.aboutUs {
+	padding: 0 $margin-0;
+	position: relative;
+	margin-bottom: 200px;
+
+	@include macbookpro{
+		padding: 0rem $margin-1;
+	}
+
+	@include macbook{
+		padding: 0rem $margin-2;
+	}
+
+	@include mobile {
+		padding: 0rem $margin-3;
+	}
+
+	.aboutUsContent {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include mobile{
+			flex-direction: column;
+		}
+
+		.aboutUsContent1 {
+			position: relative;
+			width: 61%;
+
+			@include macbookpro{
+				width: 80%;
+			}
+
+			@include mobile{
+				width: 100%;
+			}
+
+			
+
+			.blob2 {
+				top: -150px;
+				left: -320px;
+				height: 90%;
+				width: 100%;
+				z-index: -1;
+			}
+			h3 {
+				@include miniHeading;
+			}
+
+			h2 {
+				@include heading;
+			}
+
+			p {
+				font-family: 'Regular';
+				font-size: $font-size-4;
+				color: rgba(255, 255, 255, 0.8);
+
+				margin-bottom: 30px;
+			}
+
+			button {
+				@include button;
+				background: transparent;
+				border: 1px solid $secondary;
+				margin-top: 50px;
+			}
+		}
+
+		.aboutUsContent2 {
+			width: 150%;
+
+			@include mobile{
+				width: 100%;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.blob1 {
+		position: absolute;
+		right: 200px;
+		z-index: -1;
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	.blob3 {
+		bottom: -400px;
+		left: 300px;
+	}
+}

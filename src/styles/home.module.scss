@@ -1,0 +1,111 @@
+@use '/src/styles/variable' as *;
+@use '/src/styles/mixin' as *;
+
+.header {
+	margin-top: 7rem;
+	padding: 7.4375rem $margin-0;
+	height: 92vh;
+	background-image: url(../assets/images/Banner.svg);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: space-between;
+
+	@include macbookpro {
+		padding: 7.4375rem $margin-1;
+		height: 70vh;
+	}
+	@include macbook {
+		padding: 7.4375rem $margin-2;
+		height: 100vh;
+	}
+
+	@include mobile {
+		padding: 7.4375rem $margin-3;
+		height: fit-content;
+		flex-direction: column;
+	}
+
+	.bannerLText {
+		@include mobile {
+			align-self: center;
+			text-align: center;
+			width: 100%;
+		}
+
+		h1 {
+			color: $secondary;
+			font-family: 'Regular';
+			font-size: $font-size-1;
+			width: 48%;
+			margin-bottom: 6.75rem;
+
+			@include macbook {
+				width: 60%;
+			}
+
+			@include mobile {
+				text-align: center;
+				width: 100%;
+				font-size: $font-size-2;
+				margin-bottom: 2rem;
+			}
+		}
+
+		button {
+			@include button;
+		}
+	}
+
+	.bannerSText {
+		align-self: end;
+		width: 30%;
+
+		@include macbook {
+			width: 60%;
+		}
+
+		@include mobile {
+			width: 100%;
+			align-self: center;
+			text-align: center;
+		}
+
+		p {
+			color: $secondary;
+			font-family: 'Regular';
+			font-size: $font-size-4;
+		}
+	}
+}
+
+.main {
+	overflow: hidden;
+
+	.underHeader {
+		padding: 45px $margin-0;
+		background-color: rgba(164, 161, 161, 0.05);
+		@include flex;
+
+		@include macbook {
+			padding: 45px $margin-2;
+		}
+
+		@include mobile {
+			padding: 20px $margin-3;
+			flex-direction: column;
+			align-items: baseline;
+		}
+
+		.underHeader1 {
+			h2 {
+				display: flex;
+				align-items: center;
+				gap: 9px;
+				font-family: 'Medium';
+				font-size: $font-size-4;
+				color: $accent-2;
+			}
+		}
+	}
+}

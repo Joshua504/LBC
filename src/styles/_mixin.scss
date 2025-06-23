@@ -1,0 +1,60 @@
+@use '/src/styles/variable' as *;
+
+@mixin mobile {
+	@media (width <= 767px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (768px < width <= 1024px) {
+		@content;
+	}
+}
+
+@mixin macbook {
+	@media (1025px < width <= 1440px) {
+		@content;
+	}
+}
+
+@mixin macbookpro {
+	@media screen and (max-width: 1728px) {
+		@content;
+	}
+}
+
+@mixin flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin button {
+	padding: 12px 46px;
+	background-color: $secondary;
+	color: $accent;
+	border-radius: 0.625rem;
+	border: none;
+	border-radius: 10px;
+	outline: transparent;
+	cursor: pointer;
+	font-family: 'Medium';
+	font-size: $font-size-7;
+	color: $secondary;
+	background: $accent;
+}
+
+@mixin miniHeading {
+	font-family: 'Medium';
+	font-size: $font-size-4;
+	color: $accent-2;
+	margin-bottom: 10px;
+}
+
+@mixin heading {
+	font-family: 'SemiBold';
+	font-size: $font-size-2;
+	color: $secondary;
+	margin-bottom: 25px;
+}
