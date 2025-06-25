@@ -24,7 +24,7 @@ const ServiceComponent = () => {
 						alt=""
 					/>
 				</div>
-				<section className={styles.servicesContent1}>
+				<section className={`${styles.servicesContent1} ${styles.content1}`}>
 					<div className={styles.servicesItem1}>
 						<h2>TAILORED FUND OPPORTUNITY RESEARCH</h2>
 						<p>
@@ -40,7 +40,7 @@ const ServiceComponent = () => {
 					</div>
 				</section>
 
-				<section className={styles.servicesContent1}>
+				<section className={`${styles.servicesContent1} ${styles.content2}`}>
 					<div>
 						<img src={SVG7} alt="" />
 					</div>
@@ -56,7 +56,7 @@ const ServiceComponent = () => {
 					</div>
 				</section>
 
-				<section className={styles.servicesContent1}>
+				<section className={`${styles.servicesContent1} ${styles.content1}`}>
 					<div className={`${styles.servicesItem1} ${styles.deck}`}>
 						<h2>PROJECT WEBSITE DEVELOPMENT</h2>
 						<p>
@@ -72,7 +72,7 @@ const ServiceComponent = () => {
 					</div>
 				</section>
 
-				<section className={styles.servicesContent1}>
+				<section className={`${styles.servicesContent1} ${styles.content2}`}>
 					<div>
 						<img src={SVG9} alt="" />
 					</div>
@@ -87,7 +87,7 @@ const ServiceComponent = () => {
 					</div>
 				</section>
 
-				<section className={styles.servicesContent1}>
+				<section className={`${styles.servicesContent1} ${styles.content1}`}>
 					<div className={`${styles.servicesItem1} ${styles.deck1}`}>
 						<h2>GRANT APPLICATION ASSISSTANCE</h2>
 						<p>
@@ -102,7 +102,7 @@ const ServiceComponent = () => {
 					</div>
 				</section>
 
-				<section className={styles.servicesContent1}>
+				<section className={`${styles.servicesContent1} ${styles.content2}`}>
 					<div>
 						<img src={SVG11} alt="" />
 					</div>
@@ -124,7 +124,7 @@ const ServiceComponent = () => {
 					</div>
 				</section>
 
-				<section className={styles.servicesContent1}>
+				<section className={`${styles.servicesContent1} ${styles.content1}`}>
 					<div className={`${styles.servicesItem1} ${styles.deck1}`}>
 						<h2>PROJECT MANAGEMENT SERVICES</h2>
 						<p>

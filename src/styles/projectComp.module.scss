@@ -22,6 +22,10 @@
 		h3 {
 			@include miniHeading;
 			text-align: center;
+
+			@include mobile {
+				font-size: $font-size-7;
+			}
 		}
 
 		h2 {
@@ -30,14 +34,15 @@
 			text-align: center;
 			width: 90%;
 
-      @include macbook {
-        width: 100%;
-        margin: 0;
-      }
+			@include macbook {
+				width: 100%;
+				margin: 0;
+			}
 
 			@include mobile {
-				font-size: $font-size-3;
 				width: 100%;
+				font-size: $font-size-5;
+				margin-bottom: 20px;
 			}
 		}
 
@@ -79,6 +84,11 @@
 				font-size: $font-size-5;
 				color: $accent-2;
 				margin-bottom: 15px;
+
+				@include mobile {
+					font-size: $font-size-7;
+					margin-bottom: 8px;
+				}
 			}
 
 			h2 {
@@ -86,6 +96,11 @@
 				font-family: 'Medium';
 				font-size: $font-size-4;
 				margin-bottom: 15px;
+
+				@include mobile {
+					font-size: $font-size-6;
+					margin-bottom: 8px;
+				}
 			}
 
 			p {
@@ -93,12 +108,22 @@
 				font-size: $font-size-4;
 				color: rgba(255, 255, 255, 0.8);
 				margin-bottom: 15px;
+
+				@include mobile {
+					font-size: $font-size-7;
+					margin-bottom: 8px;
+				}
 			}
 
 			h4 {
 				font-family: 'Medium';
 				font-size: $font-size-4;
 				color: $accent-2;
+
+				@include mobile {
+					font-size: $font-size-7;
+					margin-bottom: 8px;
+				}
 			}
 		}
 
